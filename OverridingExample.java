@@ -1,42 +1,41 @@
-//OverridingExample
-
 import java.util.*;
+//  Bike, Car, Truck, Car, Truck
+class Vehicle{
+     void startEngine(){
+        System.out.println("Vehicle Engine Starts");
+    }
+}
 
-class OverridingExample {
-
-     void Add(int a, int b) {
-
-        System.out.println("Sum : " + (a + b));
+class  Bike extends Vehicle{
+    @Override
+    void startEngine(){
+        System.out.println("BIKE : drrrrrrrrrrrr");
     }
 
-    void Add(double a, double b) {
-        System.out.println("Sum : " + (a + b));
+}
+class  Car extends Vehicle{
+    @Override
+    void startEngine(){
+        System.out.println("CAR : keeech keech keechhh vroooommm");
     }
 
-    void Add(String e, String f) {
-        System.out.println(e + f);
-        
+}
+class  Truck extends Vehicle{
+    @Override
+    void startEngine(){
+        System.out.println("TRUCK : grrrrhhhh pom pom pom");
     }
 
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter two integers:");
-        int a = scan.nextInt();
-        int b = scan.nextInt();
-
-        System.out.println("Enter two Double:");
-        double c= scan.nextDouble();
-        double d = scan.nextDouble();
-        System.out.println("Enter str1:");
-        String e = scan.next();
-     scan.nextLine(); 
-        System.out.println("Enter str2:");
-        String f = scan.nextLine();
-
-        OverridingExample obj = new OverridingExample();
-        obj.Add(a, b);
-        obj.Add(c, d);
-        obj.Add(e, f);
-
+}
+class OverridingExample{
+    public static void main(String [] args){
+        Vehicle vehicle = new Vehicle();
+        Bike bike = new Bike();
+        Car car = new Car();    
+        Truck truck = new Truck();
+        vehicle.startEngine();
+        bike.startEngine();
+        car.startEngine();
+        truck.startEngine();
     }
 }
