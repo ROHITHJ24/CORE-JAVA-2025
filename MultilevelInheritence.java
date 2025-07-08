@@ -21,7 +21,7 @@ class C extends B{
 class MultilevelInheritence{
     public static void main(String[] args) {
         C c = new C();
-        c.displayA(); 
+        c.displayA(); multi
         c.displayB(); 
         c.displayC();
     }
