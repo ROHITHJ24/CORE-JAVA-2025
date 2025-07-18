@@ -15,8 +15,5 @@ class ArrayListExample{
         System.out.println(StudentList.set(3,"Set method"));
         System.out.println(StudentList);
         System.out.println(StudentList.contains("index 1"));
-
-        
-
-    }
+  }
 }
