@@ -11,7 +11,7 @@ public class AppTracker {
         System.out.println("After removing Instagram: " + appHistory);
         System.out.println("Was 'YouTube' opened? " + appHistory.contains("YouTube"));
         appHistory.clear();
-        System.out.println("Is history Empty ? : "+appHistory.isEmpty());
+        System.out.println("Is history Empty ? : "appHistory.isEmpty());
         System.out.println("Cleared all app history");
     }
 }
